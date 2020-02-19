@@ -1,5 +1,47 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
+#define max 10
+typedef float Elementtype;
+
+
+int main() 
+{
+	int n, i;
+	Elementtype s[max];
+	printf("请输入数组元素个数:\n");
+	scanf("%d", &n);
+	if (n <= 10)
+	{
+		printf("请输入数组的各个元素:");
+
+		for (i = 0; i < n; i++)
+		{
+			scanf("%f", &s[i]);
+		}
+		int Sum(Elementtype s[], int n);
+	}
+	//int  Sum(Elementtype s[], int n);
+	else
+	{
+		printf("所输入的数组元素个数不合规范!\n");
+	}
+	return 0;
+
+}
+
+ Sum(Elementtype s[], int n)
+{
+	int i;
+	float sum = 0;
+	for (i = 0; i<n; i++) 
+	{
+		sum = sum + s[i];
+	}
+	printf("数组元素的平均值为:%f\n", sum / n);
+	return 0;
+}
+/*
+#include <stdio.h>
 //int main()
 //{
 	//	int i = 0, a = 0;
@@ -66,14 +108,16 @@
 	}*/
 	//printf("\a\a\a\a\a");
 //}
-	int Add(int a, int b)
-	{
-		int c = 0;
-		c = a + b;
-		return c;
-	}
-	int main()
-	{
-		//Add(10,20);
-		printf("%d", Add(10, 20));
-	}
+	//int Add(int a, int b)
+	//{
+	//	int c = 0;
+	//	c = a + b;
+	//	return c;
+	//}
+	//int main()
+	//{
+	//	//Add(10,20);
+	//	printf("%d", Add(10, 20));
+	//}
+
+	//
