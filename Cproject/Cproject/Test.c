@@ -4,6 +4,61 @@
 
 int main()
 {
+	char a = 0, ch;
+	while ((ch = getchar()) != '\n')
+	{
+		if (a % 2 != 0 && (ch >= 'a'&&ch <= 'z'))
+			ch = ch - 'a' + 'A';
+		a++;
+		putchar(ch);
+	}
+	printf("\n");
+}
+/*
+//连续最大和
+int main()
+{
+	int N = 0;
+	int a[] = {0};
+	int *p = a;
+	int j = a[1];
+	int sum = 0;
+	scanf("%d", &N);
+	for (int i = 0; i <= N; i++)
+	{
+		scanf("%d", &a[i]);
+	}
+	while (*(p+1) = (j++))
+	{
+		sum += *p;
+	}
+	printf("%d", sum);
+	return 0;
+}
+/*
+int main()
+{
+	char p1[15] = "abcd", *p2 = "ABCD", str[50] = "xyz";
+	strcpy(str + 2, strcat(p1 + 2, p2 + 1));
+	printf("%s", str);
+	
+	/*
+	int a; float b, c;
+	scanf("%2d%3f%4f", &a, &b, &c);
+	printf("\na=%d,b=%d,c=%f\n", a, b, c);
+	int x = 1;
+	do
+	{
+		printf("%2d\n", x++);
+
+	} while (x--);
+	return 0;
+
+}
+
+/*
+int main()
+{
 	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
 	int *p = arr; //指针存放数组首元素的地址
 	int sz = sizeof(arr) / sizeof(arr[0]);
