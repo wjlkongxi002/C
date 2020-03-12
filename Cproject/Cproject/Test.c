@@ -2,6 +2,55 @@
 #include <stdio.h>
 #define N_VALUES 5
 
+int main() {
+	int i, j;
+	int a[5][5] = {0};
+	int m, n;
+
+	printf("请输入二维数组的行(m)和列(n):");
+	scanf("%d %d", &m, &n);
+
+	printf("下面请输入%d行%d列二维数组的各个元素:", m, n);
+	for (i = 0; i < m; i++) 
+	{
+		for (j = 0; j <m*n; j++) 
+		{
+			scanf("%d", &a[m*n]);
+		}
+	}
+
+	printf("下面输出二维数组:\n");
+	for (i = 0; i < m; i++)
+	{
+		for (j = 0; j < n; j++) 
+		{
+			printf("%4d", a[m][n]);
+			if ((j + 1) % n == 0) 
+			{
+				printf("\n");
+			}
+		}
+	}
+
+	return 0;
+}
+
+/*
+int main()
+{
+	int i = 10;
+	int j = 1;
+	const int *p1;
+	int const *p2 = &i;
+	p2 = &j;
+	int *const p3 = &i;
+	*p3 = 20;
+	//*p2 = 30;
+	//p3 = &j;
+	return 0;
+}
+
+/*
 int main()
 {
 	char a = 0, ch;
