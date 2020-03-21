@@ -4,6 +4,14 @@
 
 int main()
 {
+	char a[] = "wangjia";
+	printf("%d", sizeof(a));
+	printf("%d", strlen(a));
+}
+
+/*
+int main()
+{
 	int i, a[10];
 	for (i = 9; i >= 0; i--)
 	{
