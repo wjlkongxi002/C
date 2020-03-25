@@ -1,7 +1,24 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
+#include<stdbool.h>
 #define N_VALUES 5
 
+bool fun(int n)
+{
+	int sum = 0;
+	for (int i = 1; n < sum; i = i + 2)
+		sum = sum + i;
+	return (n = sum);
+}
+
+void main()
+{
+	fun(484);
+
+}
+
+
+/*
 int main()
 {
 	char a[] = "wangjia";
