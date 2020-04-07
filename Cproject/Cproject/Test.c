@@ -1,8 +1,28 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #include<stdbool.h>
+#include<unistd.h>
 #define N_VALUES 5
 
+
+
+/*
+int main()
+{
+	int i = 0;
+	int sum = 0;
+	int *p;
+	scanf("%d", &i);
+	p = &i;
+	sum = *p + 15;
+	printf("%d  %d\n", i, sum);
+	return 0;
+}
+
+
+
+
+/*
 bool fun(int n)
 {
 	int sum = 0;
