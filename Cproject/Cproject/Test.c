@@ -1,10 +1,37 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #include<stdbool.h>
-#include<unistd.h>
 #define N_VALUES 5
 
 
+void main()
+{
+	int a, b£»
+	scanf("%d,%d", &a, &b)£»
+	if (a>b) a = b;
+	        b = a;
+	else a++£»b++£»
+		printf("%d,%d", a, b);
+}
+/*
+int main()
+{
+	int a[] = { 2, 4, 6, 8 }, *p = a, i;
+	for (i = 0; i<4; i++)
+		a[i] = *p++;
+	printf("%d\n", a[2]);
+	return 0;
+}
+/*
+void main()
+{
+	int a = 1; int b = 2;
+	for (; a<8; a++)
+	{
+		b += a; a += 2;
+	}
+	printf("%d£¬%d\n", a, b);
+}
 
 /*
 int main()
