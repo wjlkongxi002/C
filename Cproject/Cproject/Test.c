@@ -3,16 +3,22 @@
 #include<stdbool.h>
 #define N_VALUES 5
 
-
-void main()
+int main()
 {
-	int a, b£»
-	scanf("%d,%d", &a, &b)£»
-	if (a>b) a = b;
-	        b = a;
-	else a++£»b++£»
-		printf("%d,%d", a, b);
+	int a = 10;
+	char *pc = (char*)&a;
+	int *pi = &a;
+	printf("%p\n", &a);
+	printf("%p\n", pc);
+	printf("%p\n", pc+1);
+	printf("%p\n", pi);
+	printf("%p\n", pi+1);
+
+	return 0;
 }
+
+
+
 /*
 int main()
 {
