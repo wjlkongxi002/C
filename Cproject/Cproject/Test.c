@@ -3,6 +3,26 @@
 #include<stdbool.h>
 #define N_VALUES 5
 
+void print(int n)
+{
+	if (n > 9)
+	{
+		print(n / 10);
+	}
+	printf("%d", n % 10);
+}
+int main()
+{
+	int num = 12;
+	print(num);
+	return 0;
+}
+
+
+
+
+
+/*
 int main()
 {
 	int a = 10;
@@ -19,7 +39,7 @@ int main()
 
 
 
-/*
+
 int main()
 {
 	int a[] = { 2, 4, 6, 8 }, *p = a, i;
