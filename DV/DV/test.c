@@ -7,12 +7,12 @@
 int RouterNum;                  //网络中路由的个数
 
 //定义一个路由的信息
-struct Router
+typedef struct Router
 {
 	int exp;               //每条链路的费用
 	int neighbor;           //相邻节点的信息,若两节点相邻设置为1，否则为0
 	int nexthop;           //接收节点的上一跳的地址
-};
+}Router;
 
 
 Router routertable[ROUTER_OF_NUMBER][ROUTER_OF_NUMBER];  //路由表信息
